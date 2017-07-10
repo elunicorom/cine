@@ -78,7 +78,7 @@ class UsersController extends Controller
     {
         $usuario = usuario::find($id);
         $usuario->fill($request->all())->save();
-      
+        return redirect('listar');
     }
 
     /**
